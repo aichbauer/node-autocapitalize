@@ -1,5 +1,11 @@
 # autocapitalize
 
+[![npm](https://img.shields.io/npm/v/autocapitalize.svg?style=flat-square)](https://www.npmjs.com/package/autocapitalize)
+![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/autocapitalize.svg?style=flat-square)
+[![Travis branch](https://img.shields.io/travis/com/aichbauer/node-autocapitalize/master.svg?style=flat-square)](https://travis-ci.com/aichbauer/node-autocapitalize)
+[![Codecov branch](https://img.shields.io/codecov/c/github/aichbauer/node-autocapitalize/master.svg?style=flat-square)](https://codecov.io/gh/aichbauer/node-autocapitalize)
+[![storybook](https://img.shields.io/badge/docs%20with-docz-1F2D3D.svg?style=flat-square)](https://aichbauer.github.io/node-autocapitalize)
+
 > A small string manipulation library to capitalize letters based on rules
 
 ## Table of Contents
