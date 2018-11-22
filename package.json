@@ -1,0 +1,64 @@
+{
+  "name": "autocapitalize",
+  "description": "A small string manipulation library to capitalize letters based on rules",
+  "version": "0.0.0",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "lint": "eslint src --fix",
+    "pretest": "yarn run lint",
+    "test": "jest --coverage --env=jsdom",
+    "prepush": "yarn run test",
+    "build": "rm -rf lib; babel src --out-dir lib",
+    "prepare": "yarn run build"
+  },
+  "keywords": [
+    "string",
+    "manipulation",
+    "capitalize",
+    "autocapitalize",
+    "node",
+    "node-autocapitalize"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aichbauer/node-autocapitalize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aichbauer/node-autocapitalize/issues"
+  },
+  "homepage": "https://aichbauer.github.io/node-autocapitalize",
+  "jest": {
+    "globals": {
+      "__DEV__": true
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "docz": "^0.11.0",
+    "docz-plugin-css": "^0.11.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.0",
+    "jest": "^23.5.0",
+    "regenerator-runtime": "^0.12.1"
+  }
+}

@@ -1,0 +1,77 @@
+---
+name: Introduction
+route: /
+order: 0
+---
+
+import { Playground } from 'docz';
+import { autocapitalize } from '../src';
+
+# Introduction
+
+> A small string manipulation library to capitalize letters based on rules
+
+Install
+
+```sh
+$ npm i autocapitalize -S
+```
+
+and import the cuntion from `autocapitalize` and you are ready to go.
+
+```js
+const { autocapitalize } = require('autocapitalize');
+```
+
+Now you can manipulate any input string based on rules. Capitalize every first letter of a sentence, capitalize every word, or even capitalizing every character.
+
+But see your self:
+
+<Playground>
+  <div>
+    <div>
+      Input:
+    </div>
+    <div>
+      capitalize every first letter of a sentence. need that every day, right?
+    </div>
+    <div>
+      Output:
+    </div>
+    <div>
+      {autocapitalize('capitalize every first letter of a sentence. need that every day, right?', 'sentences')}
+    </div>
+  </div>
+  <br />
+  <br />
+  <div>
+    <div>
+      Input:
+    </div>
+    <div>
+      capitalize every first letter of every word, this is what i need every day twice!!!
+    </div>
+    <div>
+      Output:
+    </div>
+    <div>
+      {autocapitalize('capitalize every first letter of every word, this is what i need every day twice!!!', 'words')}
+    </div>
+  </div>
+  <br />
+  <br />
+  <div>
+    <div>
+      Input:
+    </div>
+    <div>
+      capitalize every letter, this is what i need most!!!1!1!11! *iamcalm*
+    </div>
+    <div>
+      Output:
+    </div>
+    <div>
+      {autocapitalize('capitalize every letter, this is what i need most!!!1!1!11! *iamcalm*', 'characters')}
+    </div>
+  </div>
+</Playground>

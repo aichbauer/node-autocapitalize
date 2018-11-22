@@ -1,0 +1,39 @@
+---
+name: Basic Usage
+route: /basic-usage
+order: 4
+---
+
+# Basic Usage
+
+Import the `autocapitalize` function from the package `autocapitalize`. The first arguement should be the `string` that you want to manipulate, and the second arguement should be the `rule` of how to manipulate this string.
+
+```js
+const { autocapitalize } = require('autocapitalize');
+
+const value = 'this is an example text. this is an example text? this is an example text!'
+
+// => "this is an example text. this is an example text? this is an example text!"
+autocapitalize(value);
+
+// => "this is an example text. this is an example text? this is an example text!"
+autocapitalize(value, 'off');
+
+// => "this is an example text. this is an example text? this is an example text!"
+autocapitalize(value, 'none');
+
+
+// => "This is an example text. This is an example text? This is an example text!"
+autocapitalize(value, 'on');
+
+// => "This is an example text. This is an example text? This is an example text!"
+autocapitalize(value, 'sentences');
+
+
+// => "This Is An Example Text. This Is An Example Text? This Is An Example Text!"
+autocapitalize(value, 'words');
+
+
+// => "THIS IS AN EXAMPLE TEXT. THIS IS AN EXAMPLE TEXT? THIS IS AN EXAMPLE TEXT!"
+autocapitalize(value, 'characters');
+```

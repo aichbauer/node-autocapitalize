@@ -1,0 +1,37 @@
+---
+name: Functions
+route: /functions
+order: 3
+---
+
+# Functions
+
+In this section we will get an overview of the functions of `autocapitalize`.
+
+## autocapitalize
+
+The function that manipulates a string.
+
+### Syntax
+
+Returns a `string`.
+
+```js
+const capitalizedText = autocapitalize(value, rule);
+```
+
+### Parameters
+
+Parameter | Type | Required | Default | Description
+---|---|---|---|---
+value | `string` | true | | The string you want to manipulate
+rule | `string` | false | | `off`, `none`, `on`, `sentences`, `words`, `characters`
+
+#### rule
+
+Type | Description
+---|---
+`off`, `none` | `autcapitalize` returns the value (not manipulated)
+`on`, `sentences` | `autcapitalize` returns the value where the first letter of each sentence defaults to a capital letter
+`words` | `autocapitalize` returns the value where the first letter of each word  defaults to a capital letter
+`characters` | `autocapitalize` returns the value where all letters defaults to a capital letter
