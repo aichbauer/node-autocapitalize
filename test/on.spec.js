@@ -20,6 +20,12 @@ test('autocapitalize | sentence short | rule === "on"', () => {
   expect(capitalizedText).toBe(result.on.sentenceShort);
 });
 
+test('autocapitalize | sentence fancy | rule === "on"', () => {
+  const capitalizedText = autocapitalize(text.sentenceFancy, 'on');
+
+  expect(capitalizedText).toBe(result.on.sentenceFancy);
+});
+
 test('autocapitalize | one word | rule === "on"', () => {
   const capitalizedText = autocapitalize(text.oneWord, 'on');
 

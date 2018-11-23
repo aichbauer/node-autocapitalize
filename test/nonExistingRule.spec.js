@@ -20,6 +20,12 @@ test('autocapitalize | sentence short | rule === "nonExistingRule"', () => {
   expect(capitalizedText).toBe(result.none.sentenceShort);
 });
 
+test('autocapitalize | sentence fancy | rule === "nonExistingRule"', () => {
+  const capitalizedText = autocapitalize(text.sentenceFancy, 'nonExistingRule');
+
+  expect(capitalizedText).toBe(result.none.sentenceFancy);
+});
+
 test('autocapitalize | one word | rule === "nonExistingRule"', () => {
   const capitalizedText = autocapitalize(text.oneWord, 'nonExistingRule');
 

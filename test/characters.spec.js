@@ -20,6 +20,12 @@ test('autocapitalize | sentence short | rule === "characters"', () => {
   expect(capitalizedText).toBe(result.characters.sentenceShort);
 });
 
+test('autocapitalize | sentence fancy | rule === "characters"', () => {
+  const capitalizedText = autocapitalize(text.sentenceFancy, 'characters');
+
+  expect(capitalizedText).toBe(result.characters.sentenceFancy);
+});
+
 test('autocapitalize | one word | rule === "characters"', () => {
   const capitalizedText = autocapitalize(text.oneWord, 'characters');
 

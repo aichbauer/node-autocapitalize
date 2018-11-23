@@ -14,7 +14,7 @@ const autocapitalize = (value, rule) => {
       || value.includes('!')
     ) {
       let returnValue = '';
-      value.toLowerCase().split(/([.?!] )/g).forEach((item) => {
+      value.split(/([.?!] )/g).forEach((item) => {
         returnValue += item
           ? `${item[0].toUpperCase()}${item.substring(1)}`
           : '';
@@ -28,7 +28,7 @@ const autocapitalize = (value, rule) => {
 
   if (rule === 'words') {
     let returnValue = '';
-    value.toLowerCase().split(/([ -])/g).forEach((item) => {
+    value.split(/([ -])/g).forEach((item) => {
       returnValue += item
         ? `${item[0].toUpperCase()}${item.substring(1)}`
         : '';
