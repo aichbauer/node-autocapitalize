@@ -1,3 +1,7 @@
+1.0.2 - November, 23 2018
+
+* 649f93f Fix: toLowercase instead use original string (#2) (Lukas Aichbauer)
+
 1.0.1 - November, 23 2018
 
 * 5a6c0c3 Fix: for hyphenated compound words (#1) (Lukas Aichbauer)
