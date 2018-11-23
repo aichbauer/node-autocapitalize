@@ -22,6 +22,12 @@ test('autocapitalize | sentence short | rule === "none"', () => {
   expect(capitalizedText).toBe(result.none.sentenceShort);
 });
 
+test('autocapitalize | sentence fancy | rule === "none"', () => {
+  const capitalizedText = autocapitalize(text.sentenceFancy, 'none');
+
+  expect(capitalizedText).toBe(result.none.sentenceFancy);
+});
+
 test('autocapitalize | one word | rule === "none"', () => {
   const capitalizedText = autocapitalize(text.oneWord, 'none');
 
