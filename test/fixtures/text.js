@@ -1,5 +1,6 @@
 const text = {
   empty: '',
+  hyphenatedCompoundWord: 'long-term',
   oneWordWhiteSpace: 'hello ',
   oneWord: 'hello',
   helloWorld: 'hello, world!',
@@ -13,6 +14,7 @@ const text = {
 
 const resultOnAndSentences = {
   empty: '',
+  hyphenatedCompoundWord: 'Long-term',
   oneWordWhiteSpace: 'Hello ',
   oneWord: 'Hello',
   helloWorld: 'Hello, world!',
@@ -31,6 +33,7 @@ const result = {
   sentences: resultOnAndSentences,
   words: {
     empty: '',
+    hyphenatedCompoundWord: 'Long-Term',
     oneWordWhiteSpace: 'Hello ',
     oneWord: 'Hello',
     helloWorld: 'Hello, World!',
@@ -43,6 +46,7 @@ const result = {
   },
   characters: {
     empty: '',
+    hyphenatedCompoundWord: 'LONG-TERM',
     oneWordWhiteSpace: 'HELLO ',
     oneWord: 'HELLO',
     helloWorld: 'HELLO, WORLD!',
