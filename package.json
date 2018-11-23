@@ -1,7 +1,7 @@
 {
   "name": "autocapitalize",
   "description": "A small string manipulation library to capitalize letters based on rules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib/index.js",
   "license": "MIT",
   "private": false,
